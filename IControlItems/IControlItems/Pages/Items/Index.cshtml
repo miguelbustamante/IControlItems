@@ -1,0 +1,12 @@
+﻿@page
+@model IControlItems.Models.ItemParams
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<button type="button" class="btn btn-primary active" asp-page=""><a asp-page="/Items/Create" class="plain">Create</a></button>
+    
+
+@Html.TextBoxFor(m => m.Name);
